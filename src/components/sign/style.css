@@ -1,0 +1,54 @@
+.sign {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sign-title {
+  border-bottom: 3px solid #1976d2;
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.sign .btn {
+}
+
+.sign .btn-submit {
+}
+
+.sign .link {
+  display: inline-block;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sign-bg {
+  background-image: url('/images/sign-bg.jpg');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+/* .sign-forgot-link {
+  float: right;
+} */
+
+.sign-panel {
+  background: white;
+  border-radius: 3px;
+  z-index: 10;
+  width: 400px;
+  border: 1px solid grey;
+}

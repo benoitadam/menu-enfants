@@ -1,0 +1,36 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  width: 160px;
+  margin: 0 -80px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.step_ball {
+  width: 8px;
+  height: 8px;
+  background: #ddd;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.step-ok, .step-active {
+  color: black;
+}
+
+.step-ok .step_ball, .step-active .step_ball {
+  background: #05668d;
+}
+
+.step_content {
+  align-items: center;
+  display: flex;
+}
+
+.step_content svg {
+  margin: 5px;
+}

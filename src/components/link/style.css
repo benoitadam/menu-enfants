@@ -1,0 +1,22 @@
+.link {
+  color: #001d29;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link.active {
+  color: #05668d;
+}
+
+.link b {
+  color: #05668d;
+  font-weight: bold;
+}
+
+.link.disabled {
+  color: #cacaca;
+  background-color: #fafafa;
+  border: 1px solid #f6f6f6;
+}

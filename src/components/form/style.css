@@ -1,0 +1,33 @@
+.form {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.form_error {
+  color: red;
+}
+
+.form_busy {
+  position: absolute;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  top: 0;
+  left: 0;
+  animation: 1s ease 0s 1 form_busy_opacity;
+}
+@keyframes form_busy_opacity {
+  0% { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+
+.form .btn {
+  margin-right: 10px;
+}

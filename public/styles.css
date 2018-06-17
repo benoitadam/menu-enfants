@@ -1,0 +1,342 @@
+.layout {
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-width: 800px;
+  min-height: 1800px;
+}
+.carte {
+  background: white;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.carte_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4em;
+  /* margin: 10px; */
+}
+.carte_body {
+  display: flex;
+}
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.price_title {
+  margin: 0 2px;
+}
+.price_value {
+  margin: 0 2px;
+}
+.price_currency {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.category {
+  margin: 10px;
+}
+.category_title {
+  font-size: 2.6em;
+  color: #a35323;
+  margin: 5px 0;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  align-items: stretch;
+}
+.product_body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.product_title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.product_desc {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #434e5d;
+  margin: 3px 0;
+}
+.product_prices {
+  display: inline-block;
+  text-align: right;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.logo {
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+.column {
+  flex: 1;
+  /* margin: 5px; */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.languages {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  /* margin-top: 20px; */
+}
+.language {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 0;
+}
+.language-current {
+  background: #ffffff5e;
+}
+.language_image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+}
+.language_title {
+  background: white;
+  text-align: center;
+  padding: 5px;
+}
+.space {
+  width: 10px;
+  height: 10px;
+}
+.slider {
+  flex: 2;
+  width: 100%;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.slide_bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: hard-light;
+  opacity: 1;
+  transform: rotate(5deg) translate(-50px, -20px) scale(1.4);
+  transition: transform 10s ease;
+}
+.slide_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  line-height: 0.8;
+  opacity: 0;
+  width: 70%;
+  margin: 15%;
+  transform: scale(1.5);
+  transition: all 5s ease;
+}
+.slide_title {
+  display: block;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
+  padding: 5px 20px;
+  margin: 20px 0;
+  background: white;
+  color: #0c76ba;
+}
+.slide_desc {
+  display: block;
+  font-size: 30px;
+  text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  padding: 5px 20px;
+  background: #0c76ba;
+  color: white;
+  font-size: 20px;
+}
+.slide-enter {
+  opacity: 1;
+}
+.slide-enter .slide_bg {
+  transform: rotate(-5deg) translate(50px, 20px) scale(1.1);
+}
+.slide-enter .slide_content {
+  transform: scale(1);
+  opacity: 1;
+}
+.slide-leave {
+  opacity: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Song Myung', serif;
+}

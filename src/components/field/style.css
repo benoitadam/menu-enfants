@@ -1,0 +1,84 @@
+.field {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.field_label {
+  flex: 2;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.field_label label {
+  margin-right: 5px;
+}
+
+.field-error .field_message {
+  color: red;
+  width: 100%;
+  font-size: 80%;
+  margin: 5px 0;
+}
+
+.field_content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.field_inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*.field field */
+
+.field input, .field select {
+  width: 100%;
+  font-size: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #bcbcbc;
+  max-width: 500px;
+}
+.field input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  margin-right: 5px;
+}
+
+/* inline */
+
+.field-inline {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.field-inline .field_label {
+  text-align: left;
+  margin: 4px 0;
+}
+
+.field .btn {
+  margin-right: 10px;
+}
+
+.field .select-other {
+  margin-right: 10px;
+  max-width: 90px;
+}
+
+.field .input-other {
+  max-width: 400px;
+}
+
+.field-day .field_inputs > div,
+.field-day .react-datepicker-wrapper,
+.field-day .react-datepicker__input-container {
+  width: 100%;
+}

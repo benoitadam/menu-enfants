@@ -1,0 +1,45 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "baseUrl": "./",
+    "importHelpers": true,
+    "paths": {
+      "services/*": ["src/services/*"],
+      "containers/*": ["src/containers/*"],
+      "components/*": ["src/components/*"],
+      "icons/*": ["src/icons/*"],
+      "config/*": ["src/config/*"],
+      "static/*": ["src/static/*"],
+      "common/*": ["src/common/*"],
+      "models/*": ["src/models/*"],
+      "pages/*": ["src/pages/*"],
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es5",
+      "es2015",
+      "es2017"
+    ]
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/**/*"
+  ]
+}

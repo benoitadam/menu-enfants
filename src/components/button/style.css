@@ -1,0 +1,39 @@
+.btn {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 8px 15px;
+  color: #393939;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+}
+
+.btn.active {
+  color: #ffffff;
+  background-color: #05668d;
+}
+
+.btn-primary {
+  background-color: #05668d;
+  color: #ffffff;
+}
+
+.btn-submit {
+  background-color: #05668d;
+  color: #ffffff;
+}
+
+.btn-reset {
+  color: red;
+}
+
+.btn svg {
+  font-size: 26px;
+  margin-top: -4px;
+}

@@ -1,0 +1,45 @@
+.table {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.table td {
+  border: 1px solid #dddddd;
+  border-right-color: #eeeeee;
+  border-left-color: #eeeeee;
+  height: 34px;
+  vertical-align: middle;
+}
+
+.table th {
+  border-bottom: 1px solid #777777;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 15px 8px;
+  text-align: left;
+}
+
+.table td input, .table td select {
+  height: 34px;
+  width: 100%;
+  border: 0;
+  padding: 5px 10px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.table tr.even {
+  background-color: #f9f9f9;
+}
+
+.table-selectable tr {
+  cursor: pointer; 
+}
+
+.table-selectable tr:hover { 
+  background-color: #e6f7ff;
+}
+
+.table-selectable tr:active { 
+  background-color: #d7f2ff;
+}
